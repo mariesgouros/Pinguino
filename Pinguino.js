@@ -40,7 +40,6 @@ function Countdown(options) {
   counterEnd = options.onCounterEnd || function () {};
 
   function decrementCounter() {
-    console.log("yo"+seconds);
     updateStatus(seconds);
     if (seconds == 0) {
       counterEnd();
@@ -53,13 +52,21 @@ function Countdown(options) {
     clearInterval(timer);
     timer = 0;
     seconds = $("#amount").val();
-    console.log("gday"+seconds)
-    timer = setInterval(decrementCounter, 1000);
+    timer = setInterval(decrementCounter, 60000);
   };
 
   this.stop = function () {
-    clearInterval(timer);
+    clearInterval(timer);   
+    setInterval(flasher, 50);
   };
+}
+
+function flasher() {
+    console.log("shfs");
+    var rand1 = Math.floor(Math.random()*256); 
+    var rand2 = Math.floor(Math.random()*256);  
+    var rand3 = Math.floor(Math.random()*256);
+    $('h1').css('background-color', "rgb("+rand1+","+ rand2+","+ rand3+")");
 }
 
 var rotator = -1;
