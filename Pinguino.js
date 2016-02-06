@@ -1,4 +1,42 @@
+<<<<<<< HEAD
 // Helpful source: http://stackoverflow.com/questions/23262434/javascript-countdown-timer-pause-resume
+=======
+//VERY VERY MESSY
+$(function() {
+    $( "#slider-range-min" ).slider({
+      range: "min",
+      value: 37,
+      min: 1,
+      max: 700,
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "$" + ui.value );
+      }
+    });
+    $( "#amount" ).val( "$" + $( "#slider-range-min" ).slider( "value" ) );
+});
+
+$('#x').on('click', function() {
+	$('#x').fadeOut(100);
+	setTimeout(function(){
+		$(".main").prepend('<div class="darken"></div>');
+		$('#popup').fadeIn(1000);
+		$('#x').fadeIn(1000);
+	},6000);
+});
+
+$('#time').on('click', function() {
+	if (isRunning){
+		isRunning = false;
+
+	}
+	setTimeout(function(){
+		$(".main").prepend('<div class="darken"></div>');
+		$('#popup').fadeIn(1000);
+		$('#x').fadeIn(1000);
+	},6000);
+});
+
+>>>>>>> 847584dd50beebaaf9b096f3af4eda582649299a
 var CountDown = (function ($) {
     // Length ms 
     var timeOut = 10000;
