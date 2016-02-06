@@ -14,21 +14,31 @@
 		<h1>Pinguino's Igloox</h1>
 		<div id="slider-range-min"></div>
 		<!--<div id="progressBar" style="height: 20px; position: relative; top: 0px; transition: all 0.1s ease; width: 100%; z-index: 10; background-color: rgb(255, 255, 255);"></div>-->
-		
-		<span id="time"><button onclick="myVar = setTimeout(myFunction, 3000)">Try it</button></span>
-		<!--<p> Pinguino likes to help people keep studying. Pinguino will encourage you to keep going!</p>
-		<p>Let's be study buddies! How long do you want to work for?</p>-->
 		<p>
   			<label for="amount"></label>
-  			<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+  			<input type="text" id="amount" style="width:80px; border:0; color:#f6931f; font-weight:bold; font-size:45px;">
 		</p>
+		<span><button id="timer" style="font-size:20px; width:80px; padding:0px">Timer</button></span>
+		<!--<p> Pinguino likes to help people keep studying. Pinguino will encourage you to keep going!</p>
+		<p>Let's be study buddies! How long do you want to work for?</p>-->
+		
  
 		<div id="slider-range-min"></div>
- 		 <script src="Pinguino.js"></script>
-	<h1>Pinguino's Igloox</h1>
-	<div id="progressBar" style="height: 30px; position: relative; top: 0px; transition: all 0.1s ease; width: 100%; z-index: 10; background-color: rgb(255, 255, 255);"><p>Time Remaining: </div>
-	<p>
-	<span id="time"><button onclick="myVar = setTimeout(myFunction, 3000)">Try it</button></span>
+		<div style="width: 100%; display:table;">
+			<div id="bottom" style="display: table-row">
+				<div id="pinguino" style="width: 600px; display: table-cell;">
+					<img id="my_image" src="css/pinguino1.png">
+				</div>
+				<div class="speech-bubble" style="display: table-cell;">
+					<img id="my_image2" src="css/bubble.png">
+					<p id="text">Let's get started!</p>
+				</div>
+			</div>
+		</div>
+ 		<script src="Pinguino.js"></script>
 	<!--<p> Pinguino likes to help people keep studying. Pinguino will encourage you to keep going!</p>-->
 	</body>
+	<footer>
+		<div id="footer">Made by Chan, Michal, and Marie (no shame, all pride)</div>
+	</footer>
 </html>

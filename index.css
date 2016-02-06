@@ -12,7 +12,6 @@ h1 {
 	font-family: Ubuntu;
 	background-color: rgb(40, 0, 60);
 	color: white;
-	width: 100%;
 	margin: 0;
     padding: 20px;
 	border: 0;
@@ -23,9 +22,49 @@ h1 {
 p {
 	font-family: Lora;
 	font-weight: bold;
-	margin-right: 320px;
-	margin-left: 320px;
+	margin-right: 100px;
+	margin-left: 0px;
 	margin-top: 0;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 00px;
+	padding-bottom: 0px;
+}
+
+#amount{
+	text-align: center;
+}
+
+#full {
+	height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+#bottom {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#my_image {
+	margin-left: 40%;
+	height: 60vh;
+}
+
+#my_image2 {
+	margin-left: 5%;
+	height: 60vh;
+}
+
+.speech-bubble {
+	position: relative;
+}
+
+#text {
+	position: absolute;
+	top: 100px;
+	left: 100px;
+}
+
+#footer {
+	font-size: 13px;
+	text-align: center;
 }
